@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea House</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config script setup -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <h2>Hello</h2>
+    <!-- main content -->
+     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <!-- header section -->
+         <header class="lg:flex pt-10 mb-10">
+            <!-- text content -->
+             <div>
+                <h3 class="font-bold text-3xl md:text-6xl lg:text-8xl">It's good <br> tea time at the <br> Tea House</h3>
+                <p class="w-1/2">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white p-2 rounded-md font-bold">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+
+             </div>
+             <!-- img content -->
+              <div class="relative">
+                <!-- image -->
+                <div>
+                    <img src="./images/banner.png" alt="">
+                </div>
+                <!-- card -->
+                 <div class="absolute flex items-center bg-white shadow-lg rounded-lg px-2 py-2 md:px-10 lg:py-4 top-28 md:top-80 md:left-32 lg:left-28">
+                    <!-- icone -->
+                     <div>
+                        <i class="fa-solid fa-star text-orange-400 text-3xl"></i>
+                     </div>
+                     <!-- text -->
+                      <div class="ml-6">
+                        <h3 class="font-bold lg:text-3xl">5.00</h3>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                      </div>
+                 </div>
+              </div>
+         </header>
+         <!-- featured product section -->
+          <section class="py-8">
+            <!-- title -->
+             <div class="text-center mb-8">
+              <h3 class="text-3xl md:text-4xl font-bold mb-2">Our features products</h3>
+              <p class="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa error cupiditate enim est maiores quos delectus aut magnam, perferendis fuga autem sit animi nihil soluta veniam necessitatibus vitae. Placeat!</p>
+             </div>
+             <!-- grid card -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <!-- card product -->
+                <div class="rounded-lg shadow-md bg-gray-50">
+                  <img class="mx-auto pt-4" src="./images/tea-1.png" alt="">
+                  <div class="p-4">
+                    <h3 class="font-bold text-xl">Milk Tea</h3>
+                    <p>Lorem ipsum dolor sit, amet by milk.</p>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-md bg-gray-50">
+                  <img class="mx-auto pt-4" src="./images/tea-2.png" alt="">
+                  <div class="p-4">
+                    <h3 class="font-bold text-xl">Milk Tea</h3>
+                    <p>Lorem ipsum dolor sit, amet by milk.</p>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-md bg-gray-50">
+                  <img class="mx-auto pt-4" src="./images/tea-3.png" alt="">
+                  <div class="p-4">
+                    <h3 class="font-bold text-xl">Milk Tea</h3>
+                    <p>Lorem ipsum dolor sit, amet by milk.</p>
+                  </div>
+                </div>
+                <div class="rounded-lg shadow-md bg-gray-50">
+                  <img class="mx-auto pt-4" src="./images/tea-4.png" alt="">
+                  <div class="p-4">
+                    <h3 class="font-bold text-xl">Milk Tea</h3>
+                    <p>Lorem ipsum dolor sit, amet by milk.</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+     </main>
 </body>
 </html>
